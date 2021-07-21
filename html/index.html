@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> moonRise </title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="shortcut icon" href="../media/images/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&family=Ubuntu+Mono&display=swap');
+        
+        html{
+            background-image: url(..//media/images/bg.png);
+            background-attachment: fixed;
+            background-size: cover;
+            scroll-behavior: smooth;
+            overflow: auto;
+        }
+
+
+        #titleImage{
+            display: block;
+            margin: auto;
+            width: 70%;
+
+            -webkit-animation: fadein 2s;
+            -moz-animation: fadein 2s;
+            -ms-animation: fadein 2s;
+            -o-animation: fadein 2s;
+            animation: fadein 2s;
+        }
+
+        /* title Image fades */
+
+        @keyframes fadein{
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @-moz-keyframes fadein{
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @-webkit-keyframes fadein{
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @-ms-keyframes fadein{
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @-o-keyframes fadein{
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        /* title image fades end */
+
+        /* Background of text */
+
+        .textBG{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height:100vh;
+            overflow: auto;
+        }
+
+        #BG1{
+            background-image: url(../media/images/bg2.png);
+        }
+
+        #BG2{
+            background-image: url(../media/images/base-lunar.jpg);
+        }
+
+        /* Text Style */
+
+        .textStyle{
+            color: white;
+            font-family: 'Roboto Mono', monospace;
+            text-shadow: black 1px 1px;
+        }
+
+        .textStyle h1{
+            font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .textStyle h2{
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .textStyle h3{
+            font-size: 35px;
+        }
+
+        .textStyle a{
+            text-decoration: none;
+        }
+
+        /* text style About us */
+
+        .AboutUs{
+            margin: 12% 0;
+        }
+
+        .AboutUs h2{
+            padding-top: 15px;
+            padding-bottom: 25px;
+        }
+
+        .AboutUs h3{
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-top: 15px;
+        }
+
+        .AboutUs button{
+            border: none;
+            background-color: rgba(0, 0, 255, 0.8);
+            color: white;
+            padding: 2% 5%;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 35px;
+            display: block;
+            margin: auto;
+            transition: 1s font-size;
+            cursor: pointer;
+        }
+
+        .AboutUs button:hover{
+            font-size: 40px;
+        }
+
+        /* text style Follow us */
+
+        .FollowUs{
+            margin: 6% 0;
+        }
+
+        .FollowUs h2{
+            text-align: center;
+            padding-top: 1.5%;
+            text-shadow: black 5px 5px;
+        }
+
+        .FollowUs h1{
+            font-size: 50px;
+            color: white;
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+            text-shadow: black 5px 5px;
+        }
+
+        .FollowUs button{
+            border: none;
+            background-color: rgba(128, 255, 0, 0.8);
+            color: white;
+            padding: 2% 5%;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 35px;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            transition: 1s font-size;
+            cursor: pointer;
+        }
+
+        .FollowUs button:hover{
+            font-size: 40px;           
+        }
+
+        @font-face {
+            font-family: 'Social Media';
+            src: url(../media/fonts/social\ media.ttf);
+        }
+
+    </style>
+
+    <header>
+        <div class="navBar">
+            <ul>
+                <a href="index.html#BG1"><li><img src="../media/images/logo.png" id="logo"> moonRise</li></a>
+                <div id="dropNav"><a href="travels.html" class="title" id="left"><li>Future Travels</li></a>
+                    <div id="dropC">
+                        <p><a href="LEmpire.html"> L'Empire I </a></p>
+                        <p> <a href="block.html">L'Empire II </a></p>
+                        <p> <a href="block.html">L'Empire III</a></p>
+                        <p> <a href="block.html">The Kingdom</a></p>
+                    </div>
+                </div>
+                <a href="index.html#BG2" class="title"><li>About Us</li></a>
+                <a href="index.html#FollowUs" class="title"><li>Follow us</li></a>
+            </ul>
+        </div> 
+    </header>
+
+    <main>
+        <div class="textBG" id="BG1"><img src="../media/images/titleImage.png" id="titleImage"></div>
+        <div class="textBG" id="BG2">
+            <div class="textStyle">
+                <div class="AboutUs">
+                    <h1> About Us </h1>
+                    <h3>The moonRise project believes in a great future, making the space travel a little bit easy and cheap. Our objective is give you the first and best experience in a space program. Working in nine countries including United States, United Kingdom, South Africa and more. Wait for us. </h3>
+                    <h2>2029</h2>
+                    <a href="block.html"><button> More Information </button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="textBG" id="BG1"> 
+            <div class="textStyle" id="FollowUs">
+                <div class="FollowUs">
+                    <h1> Follow us </h1>
+                    <h2> <div style="font-family: 'social media';"> t </div> @moonRise </h2>
+                    <h2> <div style="font-family: 'social media';"> y f </div> moonRise Company </h2>
+                    <h2> <div style="font-family: 'social media';"> c </div> moonRiseMedia </h2>
+                    <h2> If you want to take any questions or perhaps schedule a trip. </h2>
+                    <a href="contact.html"><button>Contact Us</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+            <h4> &copy; Copyright moonRise Company</h4>
+    </footer>
+</body>
+</html>

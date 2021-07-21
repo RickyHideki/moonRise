@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&family=Source+Code+Pro:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&family=Ubuntu+Mono&display=swap');
+               
+/* Menu */
+
+
+.navBar{
+    position: fixed;
+    width: 100%;
+}
+
+.navBar li{
+    display: inline;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 0 15px;
+    color: white;
+    padding: 10px;
+}
+
+.navBar ul a{
+    color: white;
+    text-decoration: none;
+}
+
+#logo{
+    width: 25px;
+    height: 25px;
+}
+
+.title{
+    text-align: left;
+}
+
+.navBar li:hover{
+    background-color: rgb(128, 128, 128, 0.5);
+    padding: 5px;
+}
+
+.navBar ul{
+    background-color: rgba(8, 37, 119, 0.432);
+    padding: 10px 10px 10px 32px;
+}
+
+.navBar li:active{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*  */
+
+#dropNav{
+    position: relative;
+    display: inline-block;
+}
+
+
+#dropC{
+    display: none;
+    position: absolute;
+    background-color: rgba(8, 37, 119, 0.432);
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+}
+
+#dropNav:hover #dropC{
+    display: block;
+    margin: 10px 0 125px 15px;
+    width: 262px;
+}
+
+#dropC p:hover{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+#dropC p:active{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="shortcut icon" href="../media/images/logo.ico" type="image/x-icon">
+    <title> Ops! </title>
+</head>
+<body>
+    <style>
+        html{
+            background-image: url(../media/images/bg.png);
+            background-attachment: fixed;
+            background-size: cover;
+            scroll-behavior: smooth;
+            overflow: auto;
+        }
+
+        #bg{
+            background-image: url(../media/images/bg2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height:100vh;
+            overflow: auto;
+        }
+
+        .textStyle{
+            color: white;
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+            padding-top: 5%;
+            text-shadow: black 10px 10px;
+        }
+
+        .textStyle h1{
+            font-size: 80px;
+        }
+
+        .textStyle h2{
+            font-size: 50px;
+            margin: 2% 0;
+        }
+
+        .textStyle button{
+            border: none;
+            color: white;
+            padding: 2% 5%;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 35px;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            background-color: chartreuse;
+            transition: 1s font-size;
+            cursor: pointer;
+        }
+
+        .textStyle button:hover{
+            font-size: 40px;
+        }
+
+    </style>
+    <script defer> 
+        function back(){
+            history.back()
+        }
+    </script>
+        <header>
+            <div class="navBar">
+                <ul>
+                    <a href="index.html#BG1"><li><img src="../media/images/logo.png" id="logo"> moonRise</li></a>
+                    <div id="dropNav"><a href="travels.html" class="title" id="left"><li>Future Travels</li></a>
+                        <div id="dropC">
+                            <p><a href="LEmpire.html"> L'Empire I </a></p>
+                            <p> <a href="block.html">L'Empire II </a></p>
+                            <p> <a href="block.html">L'Empire III</a></p>
+                            <p> <a href="block.html">The Kingdom</a></p>
+                        </div>
+                    </div>
+                    <a href="index.html#BG2" class="title"><li>About Us</li></a>
+                    <a href="index.html#FollowUs" class="title"><li>Follow us</li></a>
+                </ul>
+            </div> 
+        </header>
+        <main> <div id="bg">
+            <div class="textStyle">
+                <h1> Ops... </h1>
+                <h2> This page does not exist or is not ready yet. </p> Wait... </h2>
+                <button type="button" onclick="back()"> Return </button>
+            </div>
+        </div> 
+        </main>
+        <footer>
+            <h4> &copy; Copyright moonRise Company</h4>
+        </footer>
+</body>
+</html>
